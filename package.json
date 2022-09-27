@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "slidev build slides.md",
+    "dev": "slidev slides.md",
+    "export": "slidev export --dark slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.35.5",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "playwright-chromium": "^1.26.0"
+  },
+  "name": "intro-rust-101"
+}
