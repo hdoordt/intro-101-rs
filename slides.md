@@ -33,11 +33,11 @@ layout: cover
 let mut reasoning = "Rust is great and all, but...".to_owned();
 
 loop {
-    reasoning.push_str("No-one is doing it, because...");
-
     reasoning.push_str("There aren't yet a lot of jobs, because...");
 
-    reasoning.push_str("The ecosystem needs maturing, because...")
+    reasoning.push_str("Companies are hesitant to use it, because...");
+
+    reasoning.push_str("They can't find developers that have learned it, because...");
 }
 ```
 
