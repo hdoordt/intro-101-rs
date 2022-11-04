@@ -60,7 +60,7 @@ const allCratesAvailable = (code: string, playgroundCrates: string[]) => {
 }
 
 const renderPlaygroundButtons = (playgroundCrates: string[]) => {
-  const codeElements = document.querySelectorAll("pre.shiki-container");
+  const codeElements = document.querySelectorAll("pre.shiki-container .shiki-light");
   console.log(codeElements);
   Array.from(codeElements).forEach(codeElement => {
     const container = codeElement.closest(".slidev-code-wrapper");
@@ -102,26 +102,26 @@ const renderPlaygroundButtons = (playgroundCrates: string[]) => {
         })
           .then(response => response.json())
           .then(response => {
-            if (response.result.trim() === '') {
-              console.log("No output");
-            } else {
-              console.log(response.result);
-            }
+            const resultBlock = document.createElement('pre');
+
+            const resultContent = response.result.trim() === '' ? '<No output>' : response.result;
+            resultBlock.innerText = resultContent;
+            container.appendChild(resultBlock);
           });
       }
-
+      
       container.insertBefore(btnRun, container.firstChild);
     }
   });
 }
 
-watchEffect(async () => {
+(async () => {
   console.clear();
   console.log("playground");
   const availableCrates = await fetchAvailableCrates();
   await removePlaygroundButtons();
   await renderPlaygroundButtons(availableCrates);
-}, {flush: 'pre'});
+})();
 </script>
 
 <template>
