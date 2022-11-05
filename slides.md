@@ -29,6 +29,8 @@ fn main() {
 ```
 
 ```rust
+extern crate addr2line;
+
 fn main() {
   println!("Hello second world!");
 }
