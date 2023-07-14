@@ -23,6 +23,40 @@ Henk Oordt - <henk@tweedegolf.com>
 # &nbsp;
 
 <center><img src="logo.svg" width="200"/></center>
+
+---
+layout: cover
+---
+
+# Students need Rust?
+
+<center><img src="https://media.tenor.com/2BExX6W5sLAAAAAC/spongebob-squarepants-spongebob.gif"/></center>
+
+---
+layout: two-cols
+---
+
+# The other Rust
+
+Gives us
+
+- Fast software
+- Maintainable code
+- Happy developers
+- Something to write about
+
+::right::
+<center><img src="https://foundation.rust-lang.org/img/rust-logo-blk.svg" width="400"></center>
+
+
+---
+layout: default
+---
+
+# TG 💘 Rust!
+
+<center><video controls><source src="blog-scroll.webm"/>Not supported</video></center>
+
 ---
 layout: cover
 ---
@@ -31,13 +65,12 @@ layout: cover
 
 ```rust
 let mut reasoning = "Rust is great and all, but...".to_owned();
-
 loop {
-    reasoning.push_str("There aren't yet a lot of jobs, because...");
+  reasoning.push_str("There aren't a lot of job openings, because...");
 
-    reasoning.push_str("Companies are hesitant to use it, because...");
+  reasoning.push_str("Companies are hesitant to adopt it, because...");
 
-    reasoning.push_str("They can't find developers that have learned it, because...");
+  reasoning.push_str("There aren't many experienced developers, because...");
 }
 ```
 
@@ -51,61 +84,51 @@ image: https://c.tenor.com/D4aKcpzBNnMAAAAC/spongebob-meme.gif
 # How?
 
 ## By sparking students' imagination
-*and that of professors, of course*
+*and that of teachers, of course*
 
 ---
-layout: cover
+layout: default
 ---
 # What?
+Create your own course!
 
-- ## Uni course
-- ## Practical, hands-on experience
-- ## Introducing Rust from scratch
-- ## Focused on the 'Why' of Rust
-## &nbsp;
+- Compose modules from topics
+- Compose your course from modules
+- [???]
+- Profit!
+
 ## **Open source and ready to use**
 
 ---
-layout: cover
----
-# What?
-- ## 10 modules
-- ## 9 lectures
-- ## 9 tutorials
-- ## 1 final project
-
----
-layout: cover
+layout: default
 ---
 
-# What?
+# How did it go?
 
-- ## From basics
-- ## via ownership, ecosystem,
-- ## to `unsafe` and FFI
+<center><img src="101-rs-bratislava.jpg" width="600"/></center>
 
 ---
-layout: cover
+layout: default
 ---
 
-# Who?
+# How did it go?
 
-- ## Know what pointers are
-- ## Eager to get productive with Rust
+<center><img src="henk-rust-101-lecture3.jpg" width="600"/></center>
 
-*Or if you know Rust already, but want to polish your knowledge*
 
 ---
-layout: cover
+layout: default
 ---
-# Wanna try it out?
 
-- ### Pilot 1 module (lecture + turorial)
-- ### ~ November/December
-- ### at our office in Nijmegen
-<br>
+# Future
 
-## Drop me an email: henk@tweedegolf.com
+- People want this 
+  - 2.3k⭐ on GitHub
+  - Sponsored by Rust Foundation and Rust Edu
+- Add new tracks
+- Improve content
+- Enable people to contribute
 
-# &nbsp;
-<center><img src="logo.svg" width="200"/></center>
+---
+layout: end
+---
